@@ -1,0 +1,14 @@
+<aura:component controller="ConCreation">
+    <aura:attribute name="conInfo" type="Contact" default="{'sObject':'contact','LastName':''}"/>
+      <ui:inputText aura:id="LastName" label="Last Name"
+                    value="{!v.conInfo.LastName}"
+                    required="true"/>
+
+      <ui:inputText aura:id="FirstName" label="First Name"
+                    value="{!v.conInfo.FirstName}"
+                    required="true"/>   
+    <ui:inputText aura:id="tarun" label="First bb"
+                    value="{!v.conInfo.tarun}"
+                    required="true"/>   
+    <ui:button press="{!c.saveCon}" label="click"/>    
+</aura:component>
