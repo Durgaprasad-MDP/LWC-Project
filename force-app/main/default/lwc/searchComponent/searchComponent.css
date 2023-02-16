@@ -1,3 +1,5 @@
-.abc{
-    background-color: rgb(171, 94, 45);
+.git-input-padding{
+    padding:var(--padding-value);
+    background-color: rgb(220, 109, 187);
 }
+

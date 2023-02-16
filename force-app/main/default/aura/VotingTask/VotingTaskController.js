@@ -26,10 +26,14 @@
     increment1 : function(component, event, helper) {
         var count = parseInt (component.get("v.count1")+1);
         component.set("v.count1",count);
+                component.set("v.isRefresh",true);
+
     },
     decrement1: function(component, event, helper) {
         var count=parseInt (component.get("v.count1")-1);
         component.set("v.count1",count);
+                component.set("v.isRefresh",true);
+
     },
     increment2: function(component, event, helper) {
         var count = parseInt(component.get("v.count2")+1);
@@ -196,7 +200,13 @@
         component.set("v.count21", count);
                 component.set("v.isRefresh",true);
 
+    },refreshAction : function(component, event, helper) {
+                component.set("v.input", 0);
+                   component.set("v.input1", 0);
+
+        component.set("v.isRefresh",false);
     },
+    
     openModel: function(component, event, helper) {
         component.set("v.isModalOpen", true);
         var name= component.find("inputname").get("v.value");
