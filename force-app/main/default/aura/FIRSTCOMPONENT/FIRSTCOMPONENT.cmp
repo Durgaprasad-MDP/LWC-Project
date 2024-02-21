@@ -1,5 +1,0 @@
-<aura:component >
-    <h1> I am in my first lightning component</h1>
-    <p> I am inside my paragraph</p>
-    <div> I am inside Div tag</div>
-</aura:component>

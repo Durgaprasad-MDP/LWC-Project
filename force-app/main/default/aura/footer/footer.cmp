@@ -1,8 +1,0 @@
-<aura:component description="footer" implements="forceCommunity:availableforAllPageTypes" access="global">
-	    <aura:attribute name="footer" type="string" default="Just Another Dang Community" access="global"/>
-    	    <aura:attribute name="footerYear" type="string" default="2017" access="global"/>
-    <div class="grid">
-        <span>{!v.footer}</span><br/>
-        <span>&copy;Copyright {!v.footerYear}</span>
-    </div>
-</aura:component>
